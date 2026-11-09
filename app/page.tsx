@@ -110,7 +110,7 @@ export default function Home() {
         <nav className="desktop-nav" aria-label="Navegação principal">
           <a href="#servicos">Serviços</a><a href="#licitacoes">Licitações</a><a href="#investimento">Quanto custa?</a><a href="#como-funciona">Como funciona</a>
         </nav>
-        <a className="button button-primary button-small header-contact" href="#comecar">Receber proposta</a>
+        <a className="button button-primary button-small header-contact" href="#comecar">Falar com a Medigestão</a>
         <button className="menu-button" id="menu-toggle" type="button" aria-label={menuOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={menuOpen} aria-controls="mobile-navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={24} /> : <Menu size={24} />}</button>
       </div>
       {menuOpen && <nav className="mobile-nav" id="mobile-navigation" aria-label="Navegação móvel">
@@ -124,18 +124,18 @@ export default function Home() {
         <div className="container sales-hero-grid">
           <div className="sales-hero-copy">
             <p className="eyebrow">CONTABILIDADE E LICITAÇÕES</p>
-            <h1 id="hero-title">Abra sua empresa.<br />Troque de contador.<br /><em>Prepare-se para licitar.</em></h1>
-            <p className="sales-hero-description">Da abertura do CNPJ à participação em licitações, conte com a Medigestão para cuidar da organização e dos próximos passos do seu negócio.</p>
+            <h1 id="hero-title"><em>Seu negócio cresce.</em><br />A Medigestão cuida<br className="desktop-break" /> da contabilidade.</h1>
+            <p className="sales-hero-description">Abra sua empresa, troque de contador ou prepare-se para vender ao governo. Atendimento próximo, serviços claros e uma proposta feita para o seu momento.</p>
             <div className="hero-paths">
               <a className="button button-primary" href="#comecar" onClick={() => selectGoal("abrir_empresa")}>Abrir minha empresa</a>
               <a className="button button-outline" href="#comecar" onClick={() => selectGoal("trocar_contador")}>Trocar de contador</a>
-              <a className="button button-outline" href="#comecar" onClick={() => selectGoal("licitacoes")}>Participar de licitações</a>
+              <a className="hero-tender-link" href="#licitacoes">Quer vender para o governo? Conheça nossa assessoria.</a>
             </div>
             <p className="hero-reassurance"><Check size={16} aria-hidden="true" />Diagnóstico inicial gratuito e sem compromisso.</p>
           </div>
-          <div className="sales-hero-visual">
-            <img className="sales-hero-image" src={sitePath("/images/medigestao-atendimento.png")} alt="Imagem ilustrativa de uma profissional com tablet em um ambiente de atendimento empresarial" width="1254" height="1254" fetchPriority="high" />
-            <div className="hero-service-card"><span><MessageCircle size={24} aria-hidden="true" /></span><div><strong>Vamos falar do seu negócio?</strong><p>Seu próximo passo começa com uma conversa.</p></div></div>
+          <div className="sales-hero-visual"><span className="hero-orbit" aria-hidden="true" /><div className="hero-image-wrap">
+            <img className="sales-hero-image" src={sitePath("/images/medigestao-atendimento.png")} alt="Imagem ilustrativa de uma profissional com tablet em um ambiente de atendimento empresarial" width="1254" height="1254" fetchPriority="high" /></div><div className="hero-badge"><ShieldCheck size={20} aria-hidden="true" /><span>Mais clareza.<br /><strong>Novas possibilidades.</strong></span></div>
+            <div className="hero-service-card"><span><MessageCircle size={24} aria-hidden="true" /></span><div><strong>De pessoa para pessoa.</strong><p>Converse com a Medigestão pelo WhatsApp.</p></div></div>
           </div>
         </div>
       </section>
@@ -147,7 +147,7 @@ export default function Home() {
       </div></div>
 
       <section className="section services-section" id="servicos" aria-labelledby="services-title"><div className="container">
-        <div className="section-heading centered"><p className="eyebrow">ESCOLHA POR ONDE COMEÇAR</p><h2 id="services-title">O que sua empresa precisa hoje?</h2><p>Três caminhos para você avançar com orientação e um atendimento alinhado ao seu momento.</p></div>
+        <div className="section-heading centered"><p className="eyebrow">ESCOLHA POR ONDE COMEÇAR</p><h2 id="services-title">Seu próximo passo merece<br /><em>o apoio certo.</em></h2><p>Três caminhos para você avançar com orientação e um atendimento alinhado ao seu momento.</p></div>
         <div className="service-offers">{offers.map(offer => <article className={"service-offer" + (offer.id === "licitacoes" ? " is-featured" : "")} key={offer.id}>
           <span className="offer-label">{offer.label}</span><div className="offer-icon"><offer.icon size={29} strokeWidth={1.6} aria-hidden="true" /></div>
           <h3>{offer.title}</h3><p>{offer.description}</p><CheckList items={offer.items} />
@@ -156,8 +156,8 @@ export default function Home() {
       </div></section>
 
       <section className="proposal-banner" aria-labelledby="proposal-title"><div className="container proposal-banner-inner">
-        <div><p className="eyebrow">DIAGNÓSTICO GRATUITO</p><h2 id="proposal-title">Conte o que precisa. Receba uma proposta.</h2><p>Entenda como a Medigestão pode ajudar e conheça as condições para começar.</p></div>
-        <a className="button button-light" href="#comecar">Quero minha proposta</a>
+        <div><p className="eyebrow">DIAGNÓSTICO GRATUITO</p><h2 id="proposal-title">Menos dúvidas. Mais tempo para empreender.</h2><p>Uma conversa pode esclarecer o próximo passo da sua empresa. Comece pelo diagnóstico gratuito.</p></div>
+        <a className="button button-light" href="#comecar">Quero meu diagnóstico gratuito</a>
       </div></section>
 
       <section className="service-detail-section section" id="contabilidade" aria-labelledby="accounting-title"><div className="container service-detail-grid">
@@ -174,8 +174,8 @@ export default function Home() {
       </div></section>
 
       <section className="pricing-section section" id="investimento" aria-labelledby="pricing-title"><div className="container pricing-grid">
-        <div className="pricing-copy"><p className="eyebrow">INVESTIMENTO</p><h2 id="pricing-title">Quanto custa o atendimento da Medigestão?</h2><p>O valor acompanha a atividade, a rotina e os serviços que sua empresa precisa. Na primeira conversa, entendemos sua demanda para apresentar uma proposta com escopo e condições definidos.</p><p>Você pode contratar contabilidade, assessoria em licitações ou as duas soluções.</p></div>
-        <div className="pricing-card"><p className="kicker">O PRIMEIRO PASSO É GRATUITO</p><h3>Diagnóstico do seu negócio</h3><CheckList items={["Conversa sobre sua necessidade", "Orientação sobre os próximos passos", "Proposta com serviços e valores definidos"]} /><a className="button button-primary" href="#comecar">Solicitar diagnóstico e proposta</a><small>Sem compromisso de contratação. Os serviços são orçados conforme o escopo.</small></div>
+        <div className="pricing-copy"><p className="eyebrow">INVESTIMENTO</p><h2 id="pricing-title">Uma proposta que<br /><em>faz sentido para você.</em></h2><p>O valor acompanha a atividade, a rotina e os serviços que sua empresa precisa. Na primeira conversa, entendemos sua demanda para apresentar uma proposta com escopo e condições definidos.</p><p>Você pode contratar contabilidade, assessoria em licitações ou as duas soluções.</p></div>
+        <div className="pricing-card"><p className="kicker">O PRIMEIRO PASSO É GRATUITO</p><h3>Vamos entender<br />o seu negócio?</h3><p className="price-highlight">Gratuito<span>diagnóstico inicial</span></p><CheckList items={["Conversa sobre sua necessidade", "Orientação sobre os próximos passos", "Proposta com serviços e valores definidos"]} /><a className="button button-primary" href="#comecar">Solicitar diagnóstico e proposta</a><small>Sem compromisso de contratação. Os serviços são orçados conforme o escopo.</small></div>
       </div></section>
 
       <section className="advantages-section section" id="medigestao" aria-labelledby="advantages-title"><div className="container">
@@ -195,7 +195,7 @@ export default function Home() {
       </div></section>
 
       <section className="diagnostic-section section" id="comecar" aria-labelledby="diagnostic-title" ref={diagnosticRef}><div className="container diagnostic-grid">
-        <div className="diagnostic-copy"><p className="eyebrow">VAMOS COMEÇAR?</p><h2 id="diagnostic-title">Sua próxima decisão<br /><em>começa aqui.</em></h2><p>Escolha o serviço e converse com a Medigestão. O diagnóstico inicial é gratuito e ajuda a definir o atendimento ideal para sua empresa.</p>
+        <div className="diagnostic-copy"><p className="eyebrow">VAMOS COMEÇAR?</p><h2 id="diagnostic-title">Vamos tirar seus planos<br /><em>do papel?</em></h2><p>Escolha o serviço e converse com a Medigestão. O diagnóstico inicial é gratuito e ajuda a definir o atendimento ideal para sua empresa.</p>
           <CheckList items={["Contato direto com a Medigestão", "Proposta conforme sua necessidade", "Você decide depois de conhecer as condições"]} />
           <div className="direct-contact"><span>PREFERE FALAR DIRETAMENTE?</span><a href={whatsappLink()} target="_blank" rel="noopener noreferrer"><MessageCircle size={20} aria-hidden="true" />{PHONE_DISPLAY}</a><a href={"mailto:" + EMAIL}><Mail size={17} aria-hidden="true" />{EMAIL}</a></div>
         </div>

@@ -589,3 +589,228 @@ summary::marker { content: ""; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+
+/* Medigestão commercial direction: cobalt, berry and lime. */
+:root { --blue: #20349a; --ink: #15205c; --muted: #5d6380; --lime: #deeb32; --berry: #bd1757; --surface: #f5f5fc; --header-height: 90px; }
+.container { max-width: 1200px; }
+.section { padding-block: 96px; }
+.button { min-height: 54px; padding: 15px 25px; border-radius: 100px; font-size: 14px; }
+.button-primary { background: var(--berry); border-color: var(--berry); }
+.button-primary:hover { background: #981047; border-color: #981047; box-shadow: 0 8px 22px #bd175729; }
+.button-outline { border: 1.5px solid var(--blue); }
+.button-outline:hover { background: #eceeff; border-color: var(--blue); color: var(--blue); }
+.button-light { background: var(--lime); border-color: var(--lime); color: #15205c; }
+.button-light:hover { background: #edf871; border-color: #edf871; color: #15205c; }
+.site-header { background: #1c2c82; border-bottom: 1px solid #ffffff18; backdrop-filter: none; }
+.header-inner { gap: 30px; }
+.site-header .brand-logo-window img, .site-footer .brand-logo-window img { filter: brightness(0) invert(1); }
+.brand-logo-window { width: 155px; height: 78px; }
+.desktop-nav { gap: 29px; }
+.desktop-nav a { color: #fff; font-size: 13px; }
+.desktop-nav a:hover { color: var(--lime); }
+.header-contact { background: var(--lime); border-color: var(--lime); color: #18235c; min-height: 45px; font-size: 12px; padding-inline: 24px; }
+.header-contact:hover { color: #18235c; background: #eef787; border-color: #eef787; }
+.sales-hero { position: relative; overflow: hidden; background: linear-gradient(110deg,#192f8c 0%,#27318b 48%,#702564 77%,#a51c58 100%); color: white; border: 0; }
+.sales-hero::after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 75px; background: white; clip-path: polygon(100% 0,100% 100%,0 100%); }
+.sales-hero-grid { grid-template-columns: 1.15fr 1fr; gap: 40px; padding-block: 57px 115px; min-height: 680px; }
+.sales-hero-copy { position: relative; z-index: 2; }
+.sales-hero-copy .eyebrow { color: #e1e8ff; background: transparent; border: 0; border-radius: 0; border-left: 3px solid var(--lime); padding: 0 0 0 12px; letter-spacing: 1.4px; }
+.sales-hero h1 { color: white; font-size: clamp(40px,4.1vw,58px); line-height: 1.12; letter-spacing: -2px; font-weight: 600; margin-top: 24px; }
+.sales-hero h1 em { color: var(--lime); }
+.sales-hero-description { color: #e1e5fb; max-width: 530px; line-height: 1.8; font-size: 16px; margin-top: 27px; }
+.hero-paths { margin-top: 30px; gap: 13px; }
+.hero-paths .button { min-height: 55px; font-size: 13px; padding-inline: 23px; }
+.hero-paths .button-outline { background: transparent; color: white; border-color: #fff; }
+.hero-paths .button-outline:hover { background: #ffffff12; }
+.hero-tender-link { flex-basis: 100%; width: fit-content; padding-block: 8px; font-size: 12px; color: #e4e9ff; text-decoration: underline; text-underline-offset: 5px; }
+.hero-reassurance { color: #e5eaff; margin-top: 12px; font-size: 12px; }
+.hero-reassurance svg { color: var(--lime); }
+.sales-hero-visual { height: 490px; background: none; border: 0; border-radius: 0; overflow: visible; }
+.hero-image-wrap { position: absolute; inset: 0 12px 20px 22px; border-radius: 47% 47% 43% 43%; overflow: hidden; transform: rotate(5deg); border: 6px solid #ffffff12; box-shadow: 15px 20px 0 #c1266f40; }
+.sales-hero-image { object-position: 60% center; transform: rotate(-5deg) scale(1.10); }
+.hero-image-wrap::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg,#1c2c823d,transparent 60%); }
+.hero-orbit { position: absolute; inset: -15px 4px 5px 12px; border: 1.5px solid #e4ed42b0; border-radius: 47%; transform: rotate(18deg); }
+.hero-badge { position: absolute; top: 40px; right: -5px; display: flex; align-items: center; gap: 10px; padding: 14px 20px; color: #1b2b75; background: var(--lime); border-radius: 15px 15px 15px 3px; font-size: 11px; line-height: 1.5; box-shadow: 0 10px 30px #0c164333; }
+.hero-service-card { left: -12px; right: 35px; bottom: 8px; padding: 18px 24px; border-radius: 18px; box-shadow: 0 18px 40px #121b5233; }
+.hero-service-card > span { background: #eef2d7; color: #263575; border-radius: 50%; }
+.hero-service-card strong { color: #18245c; font-size: 17px; }
+.hero-service-card p { color: #606881; }
+.assurance-strip { border-bottom: 1px solid #e9eaf2; }
+.assurance-grid { padding-block: 28px; gap: 30px; }
+.assurance-grid > div { justify-content: center; }
+.assurance-grid > div + div { border-left: 1px solid #e0e3f1; }
+.assurance-grid > div > svg { color: var(--berry); }
+.assurance-grid strong { color: var(--ink); }
+.assurance-grid span { color: #676f86; }
+.eyebrow { color: var(--berry); letter-spacing: 1.6px; font-size: 11px; }
+.section-heading h2, .detail-copy h2, .tender-copy h2, .pricing-copy h2, .diagnostic-copy h2, .faq-grid h2 { font-size: clamp(32px,3.5vw,44px); letter-spacing: -1.5px; line-height: 1.18; }
+.section-heading h2 em, .pricing-copy h2 em, .tender-copy h2 em { color: var(--berry); }
+.section-heading { margin-bottom: 45px; }
+.service-offers { gap: 25px; }
+.service-offer { padding: 33px 28px 26px; border-radius: 24px; border: 1px solid #e7e8f3; background: #fff; box-shadow: 0 15px 40px #1c2a7010; transition: transform .2s,box-shadow .2s; }
+.service-offer:hover { transform: translateY(-5px); box-shadow: 0 20px 50px #1c2a7020; }
+.offer-label { color: #636a84; font-size: 10px; letter-spacing: 1px; }
+.offer-icon { width: 58px; height: 58px; background: #fbe9f0; border-radius: 18px; color: var(--berry); margin-block: 24px; }
+.service-offer h3 { color: var(--ink); font-size: 27px; }
+.service-offer > p { color: #5c6480; }
+.service-offer .check-list li { color: #5c6480; }
+.service-offer > small { color: #626a82; font-size: 11px; }
+.service-offer.is-featured { background: var(--blue); border-color: var(--blue); box-shadow: 0 15px 40px #20349a24; }
+.service-offer.is-featured h3 { color: white; }
+.service-offer.is-featured .offer-label, .service-offer.is-featured > p, .service-offer.is-featured .check-list li, .service-offer.is-featured small { color: #e1e7ff; }
+.service-offer.is-featured .offer-icon { background: #ffffff18; color: var(--lime); }
+.service-offer.is-featured .check-list svg { color: var(--lime); }
+.service-offer.is-featured .button { background: var(--lime); border-color: var(--lime); color: #18245c; }
+.proposal-banner { padding-block: 44px; background: #f0f2fc; color: var(--ink); }
+.proposal-banner .eyebrow { color: var(--berry); }
+.proposal-banner h2 { color: var(--ink); font-size: 30px; }
+.proposal-banner p:not(.eyebrow) { color: #606780; }
+.proposal-banner .button { background: var(--berry); border-color: var(--berry); color: white; }
+.service-detail-section { background: #1c2d85; color: #fff; }
+.detail-copy h2, .detail-copy h2 em { color: white; }
+.detail-copy h2 em { color: var(--lime); }
+.detail-copy .eyebrow { color: #dce781; }
+.detail-copy > p:not(.eyebrow), .detail-copy .check-list li { color: #dce2fa; }
+.detail-copy .check-list svg { color: var(--lime); }
+.deliverables-grid { gap: 18px; }
+.deliverables-grid article { background: #ffffff08; border: 1px solid #ffffff20; border-radius: 18px; padding: 30px 24px; }
+.deliverables-grid article > svg { color: var(--lime); }
+.deliverables-grid h3 { color: white; }
+.deliverables-grid p { color: #d8def5; }
+.tender-section { background: #fff; border: 0; }
+.tender-visual { height: 485px; border-radius: 30px 100px 30px 30px; border: 0; box-shadow: -18px 18px 0 #f1f2fc; }
+.tender-visual-note { background: var(--lime); border: 0; border-radius: 16px; padding: 20px; }
+.tender-visual-note strong { color: #18245c; font-size: 20px; }
+.tender-visual-note span { color: #3b4364; font-size: 12px; }
+.tender-steps li > span { background: #f9e8ef; border: 0; color: var(--berry); font-weight: 600; }
+.tender-steps strong { color: var(--ink); }
+.pricing-section { background: #f4f4fb; }
+.pricing-grid { gap: 80px; }
+.pricing-card { background: #fff; border: 0; border-top: 5px solid var(--berry); border-radius: 22px; box-shadow: 0 22px 50px #1c2a7010; padding: 36px 38px; }
+.pricing-card .kicker { color: var(--berry); font-size: 10px; letter-spacing: 1.1px; }
+.pricing-card h3 { color: var(--ink); font-size: 29px; }
+.price-highlight { color: var(--blue); font-size: 38px; font-weight: 600; letter-spacing: -1px; line-height: 1.2; margin-top: 23px; }
+.price-highlight span { display: block; color: #697089; font-size: 12px; font-weight: 400; letter-spacing: 0; margin-top: 5px; }
+.advantages-section { background: white; border: 0; }
+.advantages-grid { gap: 36px; }
+.advantages-grid article > svg { color: var(--berry); width: 46px; height: 46px; padding: 10px; box-sizing: content-box; border-radius: 20px; background: #fcebf1; }
+.advantages-grid h3 { color: var(--ink); }
+.process-section { background: #f5f6fc; }
+.process-step { background: transparent; border: 0; border-radius: 0; padding: 22px 27px 6px; }
+.process-step + .process-step { border-left: 1px solid #dce0f0; }
+.step-number { width: 53px; height: 53px; color: var(--blue); background: var(--lime); border: 0; border-radius: 50%; font-size: 20px; margin-bottom: 23px; }
+.process-step h3 { color: var(--ink); }
+.diagnostic-section { border: 0; background: linear-gradient(115deg,#1a2e87,#423078 60%,#9d215c); }
+.diagnostic-grid { align-items: center; }
+.diagnostic-copy h2 { color: white; font-size: 47px; }
+.diagnostic-copy h2 em { color: var(--lime); }
+.diagnostic-copy .eyebrow { color: #e1e88d; }
+.diagnostic-copy > p:not(.eyebrow), .diagnostic-copy .check-list li { color: #e1e5fa; }
+.diagnostic-copy .check-list svg { color: var(--lime); }
+.direct-contact { border-top-color: #ffffff30; }
+.direct-contact > span { color: #d9dff7; }
+.direct-contact a, .direct-contact a > svg { color: white; }
+.direct-contact a:hover { color: var(--lime); }
+.diagnostic-card { border: 0; border-radius: 23px; box-shadow: 0 20px 65px #11194133; }
+.form-eyebrow { color: var(--berry); font-size: 10px; }
+.diagnostic-card h3 { color: var(--ink); }
+.goal-options label { color: #5c6380; border-radius: 10px; }
+.goal-options label.goal-selected { background: #f0f2fd; border-color: var(--blue); }
+.field input, .field select { border-radius: 10px; }
+.diagnostic-cta { background: #14764b; border-color: #14764b; }
+.diagnostic-cta:hover { background: #0e5f3b; border-color: #0e5f3b; }
+.faq-list details { background: #f7f7fc; border: 1px solid #e5e7f0; border-radius: 13px; }
+.faq-list summary { color: var(--ink); }
+.faq-list details[open] { background: #f5f5fc; border-color: #cdd4ef; }
+.site-footer { background: #121f61; border: 0; padding-top: 49px; }
+.footer-brand > .brand-descriptor, .footer-brand > p, .footer-links a, .footer-contact a, .footer-contact svg, .footer-bottom { color: #ced6f1; }
+.footer-links h3, .footer-contact h3 { color: white; }
+.footer-links a:hover, .footer-contact a:hover, .footer-bottom a:hover { color: var(--lime); }
+.footer-bottom { border-color: #ffffff22; font-size: 11px; padding-block: 24px; }
+.floating-contact { background: #14764b; color: white; border: 2px solid white; padding: 13px 20px; box-shadow: 0 8px 25px #142c4526; }
+.floating-contact:hover { background: #0c603b; }
+@media (max-width: 1100px) {
+  .container { width: calc(100% - 64px); }
+  .desktop-nav { gap: 18px; }
+  .desktop-nav a { font-size: 12px; }
+  .header-inner { gap: 22px; }
+  .sales-hero-grid { grid-template-columns: 1.15fr 1fr; gap: 28px; padding-block: 47px 98px; min-height: 620px; }
+  .sales-hero h1 { font-size: 46px; }
+  .sales-hero-description { font-size: 14px; }
+  .sales-hero-visual { height: 430px; }
+  .hero-badge { right: -3px; font-size: 10px; padding: 12px; }
+  .hero-service-card { left: 0; right: 0; padding: 17px; }
+  .hero-service-card strong { font-size: 15px; }
+  .service-offer { padding: 29px 23px; }
+  .service-offer h3 { font-size: 24px; }
+  .pricing-grid, .diagnostic-grid, .tender-grid, .service-detail-grid { gap: 40px; }
+}
+@media (max-width: 760px) {
+  :root { --header-height: 76px; }
+  .container { width: calc(100% - 40px); }
+  .section { padding-block: 62px; }
+  .brand-logo-window { width: 128px; height: 65px; }
+  .menu-button { color: white; background: transparent; border-color: #ffffff55; border-radius: 50%; width: 42px; height: 42px; }
+  .mobile-nav { background: #192b81; border-color: #ffffff30; }
+  .mobile-nav a, .mobile-nav a:last-child { color: white; border-color: #ffffff22; }
+  .sales-hero-grid { grid-template-columns: 1fr; gap: 35px; padding-block: 35px 78px; min-height: 0; }
+  .sales-hero::after { height: 35px; }
+  .sales-hero-copy .eyebrow { font-size: 10px; padding: 0 0 0 11px; letter-spacing: 1px; }
+  .sales-hero h1 { font-size: clamp(36px,7.8vw,48px); letter-spacing: -1.5px; line-height: 1.13; margin-top: 22px; }
+  .desktop-break { display: none; }
+  .sales-hero-description { font-size: 14px; line-height: 1.8; margin-top: 22px; }
+  .hero-paths { margin-top: 24px; flex-direction: row; gap: 10px; }
+  .hero-paths .button { flex: 1; min-width: 145px; min-height: 51px; font-size: 12px; padding: 13px 12px; }
+  .hero-tender-link { font-size: 11px; padding-block: 5px; }
+  .hero-reassurance { font-size: 10px; margin-top: 11px; }
+  .sales-hero-visual { max-width: 410px; height: 365px; border-radius: 0; margin-inline: auto; }
+  .hero-image-wrap { inset: 0 15px 15px 20px; }
+  .hero-badge { top: 25px; right: 0; }
+  .hero-service-card { left: 2px; right: 2px; bottom: 0; padding: 15px 19px; border-radius: 15px; }
+  .hero-service-card strong { font-size: 15px; }
+  .hero-service-card p { font-size: 10px; }
+  .assurance-grid { grid-template-columns: 1fr; gap: 19px; padding-block: 27px; }
+  .assurance-grid > div { justify-content: flex-start; padding: 0 8px; }
+  .assurance-grid > div + div { border-left: 0; }
+  .assurance-grid strong { font-size: 13px; }
+  .assurance-grid span { font-size: 11px; }
+  .section-heading h2, .detail-copy h2, .tender-copy h2, .pricing-copy h2, .diagnostic-copy h2, .faq-grid h2 { font-size: 33px; letter-spacing: -1px; }
+  .section-heading { margin-bottom: 32px; }
+  .eyebrow { font-size: 10px; letter-spacing: 1.2px; }
+  .service-offer { padding: 30px 27px; border-radius: 20px; }
+  .service-offer h3 { font-size: 28px; }
+  .service-offer:hover { transform: none; }
+  .proposal-banner { padding-block: 35px; }
+  .proposal-banner h2 { font-size: 28px; }
+  .proposal-banner .button { font-size: 12px; }
+  .service-detail-grid, .tender-grid, .pricing-grid, .diagnostic-grid { gap: 35px; }
+  .deliverables-grid article { padding: 23px; }
+  .tender-visual { height: 350px; border-radius: 24px 70px 24px 24px; box-shadow: -8px 8px 0 #f1f2fc; }
+  .tender-visual-note { left: 16px; right: 16px; bottom: 16px; padding: 16px; }
+  .tender-visual-note strong { font-size: 19px; }
+  .pricing-card { padding: 29px 25px; }
+  .price-highlight { font-size: 36px; }
+  .advantages-grid { gap: 31px; }
+  .advantages-grid article > svg { width: 31px; height: 31px; }
+  .process-step { padding: 15px 0 22px; grid-template-columns: 47px minmax(0,1fr); }
+  .process-step + .process-step { border-left: 0; border-top: 1px solid #dce0f0; padding-top: 28px; }
+  .step-number { width: 44px; height: 44px; font-size: 16px; }
+  .process-step h3 { font-size: 21px; }
+  .diagnostic-card { padding: 26px 22px; }
+  .mobile-contact { background: #fff; }
+  .mobile-contact .button { background: var(--berry); border-color: var(--berry); }
+  .footer-bottom { padding-bottom: calc(100px + env(safe-area-inset-bottom,0px)); }
+}
+@media (max-width: 380px) {
+  .container { width: calc(100% - 32px); }
+  .sales-hero h1 { font-size: 35px; }
+  .sales-hero-visual { height: 330px; }
+  .hero-paths .button { min-width: 130px; font-size: 11px; }
+  .hero-service-card { padding: 13px; }
+  .hero-service-card strong { font-size: 14px; }
+  .hero-service-card p { font-size: 9px; }
+  .hero-badge { padding: 10px; }
+}
+/* Keep the face clear of decorative callouts at every size. */
+.hero-badge { top: -13px; right: 0; }
+@media (max-width:760px) { .hero-badge { top: -9px; right: 0; } }

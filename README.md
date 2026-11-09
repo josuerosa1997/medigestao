@@ -58,3 +58,7 @@ O visitante escolhe um objetivo e abre o WhatsApp ou e-mail com a mensagem prepa
 Os caminhos públicos passam por `lib/site-path.ts`. Os metadados absolutos usam `lib/site-url.ts`. As três fontes foram colocadas em `app/fonts/` e são empacotadas pelo Next a partir de URLs relativos no CSS; os nomes de família e a aparência foram mantidos. As licenças estão em `FONT-LICENSES.txt` e acompanham a exportação.
 
 As imagens de atendimento e escritório são ilustrativas; não representam uma equipe ou sede real. A marca fornecida pelo usuário está preservada. Não há clientes ou depoimentos fictícios: a configuração de provas sociais permanece vazia.
+
+## Visual comercial atualizado
+
+Direção visual solicitada a partir de senhorcontabil.com.br: azul cobalto, magenta e amarelo-lima, abertura com fotografia em moldura orgânica, botões arredondados, faixas de contraste e diagnóstico orientado ao WhatsApp. Marca, imagens ilustrativas, serviços e contatos próprios da Medigestão. Sem preços, avaliações, prêmios ou condições comerciais da referência. As escolhas de serviço continuam preenchendo o WhatsApp e o e-mail; não há envio automático de dados.
