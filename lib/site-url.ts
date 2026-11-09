@@ -1,7 +1,7 @@
 import { BASE_PATH } from "./site-path";
 
 const configuredSiteUrl = process.env.SITE_URL
-  || `https://josuerosa1997.github.io${BASE_PATH}/`;
+  || "https://medigestaoconsultoria.com/";
 const siteRoot = new URL(`${configuredSiteUrl.replace(/\/+$/, "")}/`);
 
 /** Absolute metadata URLs relative to the published site's root directory. */

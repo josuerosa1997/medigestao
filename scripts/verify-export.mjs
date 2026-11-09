@@ -3,9 +3,9 @@ import { fileURLToPath } from "node:url";
 import { join } from "node:path";
 
 const output = fileURLToPath(new URL("../out/", import.meta.url));
-const configuredBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "/medigestao";
+const configuredBase = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const base = configuredBase === "/" ? "" : configuredBase.replace(/\/+$/, "");
-const configuredSiteUrl = process.env.SITE_URL || `https://josuerosa1997.github.io${base}/`;
+const configuredSiteUrl = process.env.SITE_URL || "https://medigestaoconsultoria.com/";
 const siteRoot = new URL(`${configuredSiteUrl.replace(/\/+$/, "")}/`);
 const failures = [];
 function expect(condition, message) { if (!condition) failures.push(message); }

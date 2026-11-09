@@ -1,3 +1,3 @@
-:HL["/medigestao/_next/static/css/e32477c187b52816.css","style"]
-:HL["/medigestao/images/medigestao-logo-transparente-clara.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"privacidade","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"kjQiQON0rR18-6GVOR0nv"}
+:HL["/_next/static/css/2f9f19cc2fb888da.css","style"]
+:HL["/images/medigestao-logo-transparente-clara.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"privacidade","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"FLrf5DVKp6BWGMLVkB9mo"}
