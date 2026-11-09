@@ -61,4 +61,4 @@ As imagens de atendimento e escritório são ilustrativas; não representam uma 
 
 ## Visual comercial atualizado
 
-Direção visual solicitada a partir de senhorcontabil.com.br: azul cobalto, magenta e amarelo-lima, abertura com fotografia em moldura orgânica, botões arredondados, faixas de contraste e diagnóstico orientado ao WhatsApp. Marca, imagens ilustrativas, serviços e contatos próprios da Medigestão. Sem preços, avaliações, prêmios ou condições comerciais da referência. As escolhas de serviço continuam preenchendo o WhatsApp e o e-mail; não há envio automático de dados.
+Direção visual solicitada a partir de senhorcontabil.com.br: azul institucional, branco e cinza-prata, abertura com fotografia em moldura orgânica, botões arredondados, faixas de contraste e diagnóstico orientado ao WhatsApp. Marca, imagens ilustrativas, serviços e contatos próprios da Medigestão. Sem preços, avaliações, prêmios ou condições comerciais da referência. As escolhas de serviço continuam preenchendo o WhatsApp e o e-mail; não há envio automático de dados.
